@@ -36,6 +36,14 @@ Tensorflow 2.0
 
 ```pip install -r requirements.txt```
 
+特别注意：因为使用VGG19迁移学习来实现，需要用到预训练Vgg19网络，因为文件太大，没有放到github上，需要自行下载。
+
+下载链接：http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat
+
+下载结束后，放到项目的根目录下。
+
+`images`文件下的`style.jpg`是风格图片，`content.jpg`是要转换的图片。
+
 3.根据个人需求，修改`settings.py`中的配置参数。
 
 4.运行训练脚本：
